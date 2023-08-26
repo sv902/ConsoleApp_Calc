@@ -26,6 +26,11 @@ namespace ConsoleApp_Calc
             {
                 result = CalculatorFunctions.Add(num1, num2);
             }
+
+            else if (operation == '-')
+            {
+                result = CalculatorFunctions.Subtract(num1, num2);
+            }
         }
     }
 }

@@ -12,6 +12,10 @@ namespace ConsoleApp_Calc
         {
             return a + b;
         }
-        
+        public static double Subtract(double a, double b)
+        {
+            return a - b;
+        }
+
     }
 }
