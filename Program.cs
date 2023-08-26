@@ -35,6 +35,25 @@ namespace ConsoleApp_Calc
             {
                 result = CalculatorFunctions.Multiply(num1, num2);
             }
+            else if (operation == '/')
+            {
+                try
+                {
+                    result = CalculatorFunctions.Divide(num1, num2);
+                }
+                catch (DivideByZeroException ex)
+                {
+                    Console.WriteLine("Помилка: " + ex.Message);
+                    return;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Невідома операція.");
+                return;
+            }
+
+            Console.WriteLine("Результат: " + result);
         }
     }
 }

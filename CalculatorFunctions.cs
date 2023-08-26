@@ -20,6 +20,17 @@ namespace ConsoleApp_Calc
         {
             return a * b;
         }
+        public static double Divide(double a, double b)
+        {
+            if (b != 0)
+            {
+                return a / b;
+            }
+            else
+            {
+                throw new DivideByZeroException("Ділення на нуль неможливе.");
+            }
+        }
 
     }
 }
