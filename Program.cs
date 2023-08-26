@@ -21,6 +21,11 @@ namespace ConsoleApp_Calc
             char operation = Convert.ToChar(Console.ReadLine());
 
             double result = 0;
+
+            if (operation == '+')
+            {
+                result = CalculatorFunctions.Add(num1, num2);
+            }
         }
     }
 }
